@@ -18,7 +18,6 @@
   It is the largest visual anomaly detection dataset containing 12 classes in 3 domains, with around 10,821 images, 9,621 of which are normal images, and 1,200 anomalous. For this study, we selected six classes namely Cashew, Chewing Gum, Fryum, Macaroni (Macaroni 1), Printed Circuit Board (PCB) 1, and PCB 3 (which will be referred to hereinafter as PCB 2).
 <p/>
 
-<br/>
 <center style="font-size:12px;font-style:default;"><b>Table. Overview of the Selected VisA Subsets</b></center>
 
 | Domain | Object | Normal | Anomalous | Anomaly Classes |
