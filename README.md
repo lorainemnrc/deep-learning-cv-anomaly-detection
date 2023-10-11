@@ -2,22 +2,23 @@
 
 <h1 style="color: #1048CB"><b>Overview</b></h1>
 
-In manufacturing industries, quality assurance and control is one of the most vital parts of the process. It ensures that the goods, products, and/or services that go into stock and are delivered/provided to customers achieve the highest level of quality possible. Such quality is achieved by ensuring these deliverables meet a certain level of standard, and never go below a certain threshold. However, for manufacturing industries, ensuring such quality can be a challenging task because of the defect's rarity, scale, sensitivity, and spectrum [(Zou, et. al., 2022)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900389.pdf).
+  In manufacturing industries, quality assurance and control is one of the most vital parts of the process. It ensures that the goods, products, and/or services that go into stock and are delivered/provided to customers achieve the highest level of quality possible. Such quality is achieved by ensuring these deliverables meet a certain level of standard, and never go below a certain threshold. However, for manufacturing industries, ensuring such quality can be a challenging task because of the defect's rarity, scale, sensitivity, and spectrum [(Zou, et. al., 2022)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900389.pdf).
 
-These challenges pose a threat to the manufacturing industry, especially in the Philippines, where the industry is currently thriving. The semiconductor manufacturing industry in the Philippines has been silently dominating the country’s value of export. In 2022, 83% of the total export value from the country’s top commodity groups came from electronics products, beating out other minerals and other manufactured goods [(PSA, 2022)](https://psa.gov.ph/content/highlights-philippine-export-and-import-statistics-august-2022-preliminary). This was also a 40% jump in export value from the 2021 figures. Of these electronic products, 47.4% accounted for semiconductors, with an equivalent export value of 1.6 trillion pesos (or $28.7B) [(Statista, 2022)](https://www.statista.com/statistics/1264606/philippines-export-share-of-semiconductors). A simple miscalculation in quality equates to millions of pesos in losses which is not ideal for a business. Thus, it is imperative to create a system for early prediction and prevention of component defects in manufacturing processes.
+  These challenges pose a threat to the manufacturing industry, especially in the Philippines, where the industry is currently thriving. The semiconductor manufacturing industry in the Philippines has been silently dominating the country’s value of export. In 2022, 83% of the total export value from the country’s top commodity groups came from electronics products, beating out other minerals and other manufactured goods [(PSA, 2022)](https://psa.gov.ph/content/highlights-philippine-export-and-import-statistics-august-2022-preliminary). This was also a 40% jump in export value from the 2021 figures. Of these electronic products, 47.4% accounted for semiconductors, with an equivalent export value of 1.6 trillion pesos (or $28.7B) [(Statista, 2022)](https://www.statista.com/statistics/1264606/philippines-export-share-of-semiconductors). A simple miscalculation in quality equates to millions of pesos in losses which is not ideal for a business. Thus, it is imperative to create a system for early prediction and prevention of component defects in manufacturing processes.
 
 <p align="justify"> &emsp;
-The team believes that these challenges can be solved by leveraging the use of machine learning and the advancement in artificial intelligence (AI). The problems of rarity, scale, sensitivity, and spectrum can be answered by combining concepts of advanced data mining, deep learning techniques, and explainable AI which can be used in the quality management of manufacturing industries.
+  The team believes that these challenges can be solved by leveraging the use of machine learning and the advancement in artificial intelligence (AI). The problems of rarity, scale, sensitivity, and spectrum can be answered by combining concepts of advanced data mining, deep learning techniques, and explainable AI which can be used in the quality management of manufacturing industries.
 <p/>
 
 <h1 style="color: #1048CB"><b>Data Source</b></h1>
 
-The dataset used for this experiment is the Visual Anomaly (VisA) dataset, which was an original curation of [Zou et. al. (2022)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900389.pdf). VisA can also be retrieved from the [Registry of Open Data on Amazon Web Services (AWS)](https://registry.opendata.aws/visa/).
+  The dataset used for this experiment is the Visual Anomaly (VisA) dataset, which was an original curation of [Zou et. al. (2022)](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900389.pdf). VisA can also be retrieved from the [Registry of Open Data on Amazon Web Services (AWS)](https://registry.opendata.aws/visa/).
 
 <p align="justify"> &emsp;
-It is the largest visual anomaly detection dataset containing 12 classes in 3 domains, with around 10,821 images, 9,621 of which are normal images, and 1,200 anomalous. For this study, we selected six classes namely Cashew, Chewing Gum, Fryum, Macaroni (Macaroni 1), Printed Circuit Board (PCB) 1, and PCB 3 (which will be referred to hereinafter as PCB 2).
+  It is the largest visual anomaly detection dataset containing 12 classes in 3 domains, with around 10,821 images, 9,621 of which are normal images, and 1,200 anomalous. For this study, we selected six classes namely Cashew, Chewing Gum, Fryum, Macaroni (Macaroni 1), Printed Circuit Board (PCB) 1, and PCB 3 (which will be referred to hereinafter as PCB 2).
 <p/>
 
+<br/>
 <center style="font-size:12px;font-style:default;"><b>Table. Overview of the Selected VisA Subsets</b></center>
 
 | Domain | Object | Normal | Anomalous | Anomaly Classes |
@@ -28,8 +29,6 @@ It is the largest visual anomaly detection dataset containing 12 classes in 3 do
 | Multiple Instances | Macaroni | 1,000 | 100 | 7 |
 | Complex Structure | PCB1 | 1,004 | 100 | 4 |
 |  | PCB2 | 1,006 | 100 | 4 |
-
-
 
 <p align="justify"> &emsp;
 The dataset has different images for normal, anomalous, and segmented anomalies for each of the 12 items or classes. The three domains of the subsets are single instance, multiple instances (both simple structures) and complex structure. The entire methodology from data preprocessing, feature extraction, model evaluation, and the inference was done for two deep learning models that combine image classification, object segmentation, and anomaly detection - the (1) Patch Distribution Model (PaDiM) and (2) Conditional Normalizing Flows for Anomaly Detection (CFLOW-AD).
