@@ -30,7 +30,7 @@
 |  | PCB2 | 1,006 | 100 | 4 |
 
 <p align="justify"> &emsp;
-The dataset has different images for normal, anomalous, and segmented anomalies for each of the 12 items or classes. The three domains of the subsets are single instance, multiple instances (both simple structures) and complex structure. The entire methodology from data preprocessing, feature extraction, model evaluation, and the inference was done for two deep learning models that combine image classification, object segmentation, and anomaly detection - the (1) Patch Distribution Model (PaDiM) and (2) Conditional Normalizing Flows for Anomaly Detection (CFLOW-AD).
+The dataset has different images for normal, anomalous, and segmented anomalies for each of the 12 items or classes. The three domains of the subsets are single instance, multiple instances (both simple structures), and complex structure. The entire methodology from data preprocessing, feature extraction, model evaluation, and the inference was done for two deep learning models that combine image classification, object segmentation, and anomaly detection - the (1) Patch Distribution Model (PaDiM) and (2) Conditional Normalizing Flows for Anomaly Detection (CFLOW-AD).
 <p/>
 
 <h1 style="color: #1048CB"><b>Highlights</b></h1>
