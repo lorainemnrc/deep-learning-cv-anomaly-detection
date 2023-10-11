@@ -18,6 +18,8 @@ The dataset used for this experiment is the Visual Anomaly (VisA) dataset, which
 It is the largest visual anomaly detection dataset containing 12 classes in 3 domains, with around 10,821 images, 9,621 of which are normal images, and 1,200 anomalous. For this study, we selected six classes namely Cashew, Chewing Gum, Fryum, Macaroni (Macaroni 1), Printed Circuit Board (PCB) 1, and PCB 3 (which will be referred to hereinafter as PCB 2).
 <p/>
 
+<br>
+<center style="font-size:12px;font-style:default;"><b>Table. Overview of the Selected VisA Subsets</b></center>
 | Domain | Object | Normal | Anomalous | Anomaly Classes |
 | :--: | :--: | :--: | :--: | :--: |
 | Single Instance | Cashew | 500 | 100 | 9 |
@@ -27,22 +29,18 @@ It is the largest visual anomaly detection dataset containing 12 classes in 3 do
 | Complex Structure | PCB1 | 1,004 | 100 | 4 |
 |  | PCB2 | 1,006 | 100 | 4 |
 
-<div>
-    <p style="font-size:10px;font-style:default;text-align:center">
-        <b>Table 1. Overview of the Selected VisA Subsets.</b>
-    </p>
-</div>
+
 
 <p align="justify"> &emsp;
-The sample images show the different images for normal, anomalous, and the segmented anomaly for each of the selected object subsets. The three domains of the subsets are single instance, multiple instances (both simple structure) and complex structure. The entire methodology from data preprocessing, feature extraction, model evaluation, and inference was done for two deep learning models that combine image classification, object segmentation, and anomaly detection - the (1) Patch Distribution Model (PaDiM) and (2) Conditional Normalizing Flows for Anomaly Detection (CFLOW-AD).
+The dataset has different images for normal, anomalous, and segmented anomalies for each of the 12 items or classes. The three domains of the subsets are single instance, multiple instances (both simple structures) and complex structure. The entire methodology from data preprocessing, feature extraction, model evaluation, and the inference was done for two deep learning models that combine image classification, object segmentation, and anomaly detection - the (1) Patch Distribution Model (PaDiM) and (2) Conditional Normalizing Flows for Anomaly Detection (CFLOW-AD).
 <p/>
 
 <h1 style="color: #1048CB"><b>Highlights</b></h1>
 
 <p align="justify"> &emsp;
-Our overall implementation of <strong><em>Padim<em/><strong/> and <strong><em>Cflow<em/><strong/> are an effective implementation of anomaly detection and localization. The model evaluation metric scores are comparable to our set benchmark, with <strong><em>Padim<em/><strong/> beating out every model in terms of sensitivity rate. Hence, our implementation is as effective as the implementation of our benchmark models.
+Our overall implementation of <strong><em>Padim<em/><strong/> and <strong><em>Cflow<em/><strong/> is an effective implementation of anomaly detection and localization. The model evaluation metric scores are comparable to our set benchmark, with <strong><em>Padim<em/><strong/> beating out every model in terms of sensitivity rate. Hence, our implementation is as effective as the implementation of our benchmark models.
 </p>
   
 <p align="justify"> &emsp;
-Focusing on each of the subset, the team states that there is no one-model-fits-all for this anomaly detection task. With our experiment involving six out of the twelve subsets of the VisA dataset, we see how <strong><em>Padim<em/><strong/> and <strong><em>Cflow<em/><strong/>'s performances change for each subset. If we were to be asked then what the rule to thumb is in selecting the better model for a certain object, the team states that for simpler objects or components such as chewing gum and cashew, any of the models can be used and will provide fairly accurate results. For more complex objects, however, <strong><em>Padim<em/><strong/> is the better model to use as it exemplifies high sensivity across all subsets while maintaining high accuracy in terms of classifying anomalous images.
+Focusing on each of the subsets, the team states that there is no one-model-fits-all for this anomaly detection task. With our experiment involving six out of the twelve subsets of the VisA dataset, we see how <strong><em>Padim<em/><strong/> and <strong><em>Cflow<em/><strong/>'s performances change for each subset. If we were to be asked what the rule of thumb is in selecting the better model for a certain object, the team states that for simpler objects or components such as chewing gum and cashews, any of the models can be used and will provide fairly accurate results. For more complex objects, however, <strong><em>Padim<em/><strong/> is the better model to use as it exemplifies high sensitivity across all subsets while maintaining high accuracy in terms of classifying anomalous images.
 </p>
